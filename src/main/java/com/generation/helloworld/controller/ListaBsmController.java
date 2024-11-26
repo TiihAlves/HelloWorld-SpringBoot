@@ -1,0 +1,19 @@
+package com.generation.helloworld.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/lista-bsm")
+public class ListaBsmController {
+
+	@GetMapping
+	public String listabsm() {
+		return "Orientação ao futuro\r\n" + "Persistência\r\n" + "Responsabilidade Pessoal\r\n"
+				+ "Mentalidade de Crescimento\r\n" + "Comunicação\r\n" + "Proatividade\r\n"
+				+ "Orientação ao Detalhe\r\n" + "Trabalho em equipe\r\n" + "";
+
+	}
+
+}
